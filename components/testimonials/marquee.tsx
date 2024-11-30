@@ -13,73 +13,7 @@ import { Subheading } from "../subheading";
 export const TestimonialsMarquee = () => {
   return (
     <div className="relative pb-40">
-      <div className="pb-20">
-        <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
-          <TbLocationBolt className="h-6 w-6 text-cyan-500" />
-        </FeatureIconContainer>
-        <Heading className="pt-4">Used by entreprenurs</Heading>
-        <Subheading>
-          LeadTrap is used by serial entrepreneurs and overachievers.
-        </Subheading>
-      </div>
-
-      <div className="relative">
-        <div className="h-full w-10 md:w-80 absolute left-0 inset-y-0 bg-gradient-to-r from-charcoal to-transparent pointer-events-none z-40"></div>
-        <div className="h-full w-10 md:w-80 absolute right-0 inset-y-0 bg-gradient-to-l from-charcoal to-transparent pointer-events-none z-40"></div>
-        <Marquee pauseOnHover className="h-full">
-          {testimonials.map((testimonial, index) => (
-            <Card key={`testimonial-${testimonial.src}-${index}`}>
-              <Quote>{testimonial.quote}</Quote>
-              <div className="flex gap-2 items-center mt-8">
-                <Image
-                  src={testimonial.src}
-                  alt="Manu Arora"
-                  width={40}
-                  height={40}
-                  className="rounded-full"
-                />
-                <div className="flex flex-col">
-                  <QuoteDescription className="text-neutral-300">
-                    {testimonial.name}
-                  </QuoteDescription>
-                  <QuoteDescription className="text-neutral-400">
-                    {testimonial.designation}
-                  </QuoteDescription>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </Marquee>
-        <Marquee
-          direction="right"
-          className="mt-8 h-full"
-          speed={40}
-          pauseOnHover
-        >
-          {testimonials.map((testimonial, index) => (
-            <Card key={`testimonial-${testimonial.src}-${index}`}>
-              <Quote>{testimonial.quote}</Quote>
-              <div className="flex gap-2 items-center mt-8">
-                <Image
-                  src={testimonial.src}
-                  alt="Manu Arora"
-                  width={40}
-                  height={40}
-                  className="rounded-full"
-                />
-                <div className="flex flex-col">
-                  <QuoteDescription className="text-neutral-300">
-                    {testimonial.name}
-                  </QuoteDescription>
-                  <QuoteDescription className="text-neutral-400">
-                    {testimonial.designation}
-                  </QuoteDescription>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </Marquee>
-      </div>
+      {/* Removed testimonial section */}
     </div>
   );
 };
