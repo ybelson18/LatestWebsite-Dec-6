@@ -135,7 +135,7 @@ export const LeadDataToggle = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: colIndex * 0.1 }}
-                className="flex flex-col gap-6"
+                className="flex flex-col space-y-4"
               >
                 {(isB2B ? b2bEnrichments : b2cEnrichments)
                   .slice(colIndex * 13, (colIndex + 1) * 13)
