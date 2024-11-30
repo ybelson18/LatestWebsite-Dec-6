@@ -15,7 +15,7 @@ export const Logo = () => {
         height={256}
         className="h-12 w-12"
       />
-      <span className="text-white font-bold text-base md:text-xl">LeadTrap</span>
+      <span className="text-white font-bold text-xl">LeadTrap</span>
     </Link>
   );
 };
