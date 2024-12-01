@@ -38,7 +38,7 @@ export const MobileNavbar = ({ navItems }: any) => {
       />
       {open && (
         <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start space-y-10 pt-5 text-xl text-zinc-600 transition duration-200 hover:text-zinc-800">
-          <div className="flex items-center justify-between w-full px-2.5 py-1.5 absolute top-0 left-0 right-0">
+          <div className="flex items-center justify-between w-full px-2.5 py-1.5">
             <Logo />
             <div className="flex items-center space-x-2">
               <IoIosClose
@@ -47,14 +47,14 @@ export const MobileNavbar = ({ navItems }: any) => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-start justify-start gap-[14px] px-8 mt-16">
+          <div className="flex flex-col items-start justify-start gap-[14px] px-8">
             {navItems.map((navItem: any, idx: number) => (
               <>
                 {navItem.children && navItem.children.length > 0 ? (
                   <>
-                    {navItem.children.map((childNavItem: any, idx: number) => (
+                    {navItem.children.map((childNavItem: any, childIdx: number) => (
                       <Link
-                        key={`link=${idx}`}
+                        key={`link-${idx}-${childIdx}`}
                         href={childNavItem.link}
                         onClick={() => setOpen(false)}
                         className="relative max-w-[15rem] text-left text-2xl"
@@ -67,7 +67,7 @@ export const MobileNavbar = ({ navItems }: any) => {
                   </>
                 ) : (
                   <Link
-                    key={`link=${idx}`}
+                    key={`link-${idx}`}
                     href={navItem.link}
                     onClick={() => setOpen(false)}
                     className="relative"
