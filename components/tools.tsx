@@ -13,6 +13,7 @@ import {
   IconQuestionMark,
   IconMail,
   IconSunglassesFilled,
+  IconBolt,
 } from "@tabler/icons-react";
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
@@ -152,6 +153,9 @@ export const Tools = () => {
       </div>
       <motion.div className="flex flex-col gap-16 md:gap-24">
         <div>
+          <div className="flex justify-center items-center">
+            <IconBolt className="h-6 w-6 text-cyan-500" />
+          </div>
           <Heading className="text-center text-white">
             Nice website. Where are your leads?
           </Heading>
