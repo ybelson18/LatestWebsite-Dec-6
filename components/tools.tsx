@@ -152,7 +152,7 @@ export const Tools = () => {
       </div>
       <motion.div className="flex flex-col gap-16 md:gap-24">
         <div>
-          <Heading>
+          <Heading className="text-center text-white">
             Nice website. Where are your leads?
           </Heading>
           <Subheading>
