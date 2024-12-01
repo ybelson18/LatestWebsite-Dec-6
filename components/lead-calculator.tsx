@@ -11,7 +11,7 @@ export const LeadCalculator = () => {
    <div className="w-full bg-charcoal p-6 md:p-12 rounded-xl mb-32">
      <div className="text-center max-w-3xl mx-auto">
        <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-         YOU&apos;RE LEAVING SERIOUS MONEY ON THE TABLE
+         You&apos;re Leaving Serious Money on the Table
        </h2>
        <p className="text-xl md:text-2xl mb-12 md:mb-16 text-neutral-300">
          See how much you could be earning with LeadTrap
@@ -42,18 +42,18 @@ export const LeadCalculator = () => {
          <input
            type="range"
            min="100"
-           max="100000"
+           max="25000"
            step="100"
-           value={visitors}
+           value={Math.min(visitors, 25000)}
            onChange={(e) => setVisitors(Number(e.target.value))}
            className="w-full h-3 bg-neutral-700 rounded-lg appearance-none cursor-pointer"
          />
-         <div className="mt-2 text-2xl text-white font-bold">{visitors.toLocaleString()} visitors</div>
+         <div className="mt-2 text-2xl text-white font-bold">{Math.min(visitors, 25000).toLocaleString()} visitors</div>
        </div>
 
        <div className="mt-12 md:mt-16 p-6 md:p-12 bg-black rounded-xl border border-neutral-800">
          <div className="text-center">
-           <p className="text-xl md:text-2xl text-white font-medium">Don't Leave Money on the Table</p>
+           <p className="text-xl md:text-2xl text-white font-medium">Potential Monthly Revenue</p>
            <p className="text-4xl md:text-7xl font-bold mt-4 md:mt-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90 whitespace-nowrap overflow-x-visible">
              ${monthlyValue.toLocaleString()}
            </p>
