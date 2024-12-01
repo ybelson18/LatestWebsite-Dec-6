@@ -5,6 +5,7 @@ import { useState } from "react";
 import { IconBolt } from "@tabler/icons-react";
 
 const b2bEnrichments = [
+  "Phone Number",
   "LinkedIn Profile URL",
   "Company Name",
   "Company Domain",
@@ -125,7 +126,7 @@ export const LeadDataToggle = () => {
             {isB2B ? "Premium B2B Lead Data" : "Proprietary B2C Insights"}
           </h2>
           <p className="text-neutral-400 text-center text-xl mb-16">
-            Real-time consumer behavior and intent data so you can close
+            {isB2B ? "Premium leads enriched with real-time behavior and intent data to close" : "Real-time consumer behavior and intent data so you can close"}
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
