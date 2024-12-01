@@ -4,7 +4,7 @@ import { useState } from "react";
 export const LeadCalculator = () => {
  const [leadValue, setLeadValue] = useState(100);
  const [visitors, setVisitors] = useState(1000);
- const monthlyValue = Math.round((visitors * 0.080) * leadValue);
+ const monthlyValue = Math.round((visitors * 0.050) * leadValue);
  const yearlyValue = monthlyValue * 12;
 
  return (
