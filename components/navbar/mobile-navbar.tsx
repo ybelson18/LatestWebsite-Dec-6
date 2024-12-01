@@ -38,7 +38,7 @@ export const MobileNavbar = ({ navItems }: any) => {
       />
       {open && (
         <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start space-y-10 pt-5 text-xl text-zinc-600 transition duration-200 hover:text-zinc-800">
-          <div className="flex items-center justify-between w-full px-2.5 py-1.5">
+          <div className="flex items-center justify-between w-full px-2.5 py-1.5 absolute top-0 left-0 right-0">
             <Logo />
             <div className="flex items-center space-x-2">
               <IoIosClose
@@ -47,7 +47,7 @@ export const MobileNavbar = ({ navItems }: any) => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-start justify-start gap-[14px] px-8">
+          <div className="flex flex-col items-start justify-start gap-[14px] px-8 mt-16">
             {navItems.map((navItem: any, idx: number) => (
               <>
                 {navItem.children && navItem.children.length > 0 ? (
