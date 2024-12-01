@@ -53,7 +53,7 @@ export const LeadCalculator = () => {
 
        <div className="mt-12 md:mt-16 p-6 md:p-12 bg-black rounded-xl border border-neutral-800">
          <div className="text-center">
-           <p className="text-xl md:text-2xl text-white font-medium">Potential Monthly Revenue</p>
+           <p className="text-xl md:text-2xl text-white font-medium">Don't Leave Money on the Table</p>
            <p className="text-4xl md:text-7xl font-bold mt-4 md:mt-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90 whitespace-nowrap overflow-x-visible">
              ${monthlyValue.toLocaleString()}
            </p>
