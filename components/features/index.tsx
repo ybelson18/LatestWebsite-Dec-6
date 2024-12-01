@@ -7,11 +7,11 @@ import { LeadDataToggle } from "../lead-data-toggle";
 export const Features = () => {
   return (
     <GradientContainer className="md:my-20">
-      <Container className="py-20 max-w-5xl mx-auto relative z-40">
+      <Container className="py-10 md:py-20 max-w-5xl mx-auto relative z-40">
         <div className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
         </div>
-        <h2 className="max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white pt-4 text-5xl md:text-6xl">
+        <h2 className="max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white pt-2 md:pt-4 text-4xl md:text-6xl">
           <span
             data-br=":R577puja:"
             data-brr="1"
@@ -25,7 +25,7 @@ export const Features = () => {
             Get Your First Premium Leads in Under Five Minutes
           </span>
         </h2>
-        <h2 className="max-w-4xl my-4 mx-auto text-muted text-center font-normal text-xl md:text-2xl">
+        <h2 className="max-w-4xl my-2 md:my-4 mx-auto text-muted text-center font-normal text-lg md:text-2xl">
           <span
             data-br=":R777puja:"
             data-brr="1"
@@ -37,7 +37,7 @@ export const Features = () => {
             }}
           >
             We push highly researched, ready-to-close leads to your email in Real-Time as soon as you drop our line of code on the website.
-            <div className="mt-6 flex justify-center">
+            <div className="mt-4 md:mt-6 flex justify-center">
               <button className="group hover:-translate-y-0.5 active:scale-[0.98] bg-secondary relative z-10 hover:bg-secondary/90 border border-secondary text-black text-sm md:text-sm transition font-medium duration-200 rounded-md px-4 py-2 justify-center shadow-[0px_-1px_0px_0px_#FFFFFF60_inset,_0px_1px_0px_0px_#FFFFFF60_inset] flex space-x-2 items-center group !text-lg">
                 <span>Get a demo</span>
                 <svg 
