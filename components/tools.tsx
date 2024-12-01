@@ -22,7 +22,7 @@ export const Tools = () => {
   const content = [
     {
       icon: <IconKarate className="h-8 w-8 text-secondary" />,
-      title: "Trapping Your Leads",
+      title: "Traps Your Leads",
       description:
         "The moment a potential buyer shows intent, our AI pounces. No more leads ghosting you.",
       content: (
@@ -39,7 +39,7 @@ export const Tools = () => {
     },
     {
       icon: <IconSearch className="h-8 w-8 text-secondary" />,
-      title: "Doing Its Research",
+      title: "Does Its Research",
       description:
         "While engaging, it's digging deep into who your customer is, what they'll spend, and how ready they are to buy. With proprietary information on virtually every lead, there's zero guesswork.",
       content: (
@@ -56,7 +56,7 @@ export const Tools = () => {
     },
     {
       icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
-      title: "Scoring Your Leads & Routing Them",
+      title: "Scores Your Leads & Routes Them",
       description:
         "Every lead gets scored and routed instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
       content: (
@@ -73,7 +73,7 @@ export const Tools = () => {
     },
     {
       icon: <IconMail className="h-8 w-8 text-secondary" />,
-      title: "Managing Your Follow Ups",
+      title: "Manages Your Follow Ups",
       description:
         "While your competition is sleeping, it's sending follow-ups that are closing. Email and SMS that hit hard and fast.",
       content: (
