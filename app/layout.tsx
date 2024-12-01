@@ -14,7 +14,20 @@ export const metadata: Metadata = {
   description:
     "LeadTrap is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
   openGraph: {
-    images: ["https://proactiv-aceternity.vercel.app/banner.png"],
+    title: "LeadTrap - AI That Sends You Premium Leads",
+    description: "LeadTrap is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
+    url: "https://leadtrap.ai",
+    siteName: "LeadTrap",
+    images: [
+      {
+        url: "/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "LeadTrap - AI Lead Generation Platform"
+      }
+    ],
+    locale: "en_US",
+    type: "website",
   },
 };
 
