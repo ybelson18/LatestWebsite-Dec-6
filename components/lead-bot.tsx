@@ -15,7 +15,7 @@ export function LeadBot() {
       <Script 
         strategy="afterInteractive"
         type="text/javascript" 
-        src="https://leadtrap-production.up.railway.app/platform/script?partner_id=ce43d1d9-40f7-4adb-b0e0-d1a13efa8ed5"
+        src="https://leadtrap.ai/platform/script?partner_id=e3e25fe8-6171-4c92-afa2-b043c8dcbc95"
         onLoad={() => {
           console.log('LeadTrap script loaded in client component');
         }}
