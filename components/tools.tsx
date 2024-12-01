@@ -39,7 +39,7 @@ export const Tools = () => {
     },
     {
       icon: <IconSearch className="h-8 w-8 text-secondary" />,
-      title: "Investigates Thoroughly",
+      title: "Deep-Screens Every Prospect",
       description:
         "While engaging, it's digging deep into who your customer is, what they'll spend, and how ready they are to buy. With proprietary information on virtually every lead, there's zero guesswork.",
       content: (
