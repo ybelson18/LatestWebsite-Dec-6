@@ -22,87 +22,57 @@ export const Tools = () => {
   const content = [
     {
       icon: <IconKarate className="h-8 w-8 text-secondary" />,
-      title: "Capture High-Intent Leads",
+      title: "Traps Leads",
       description:
         "The moment a potential buyer shows intent, our AI pounces. No more leads ghosting you.",
       content: (
-        <ImageContainer>
-          <BlurImage
-            src="/first.png"
-            alt="dashboard"
-            height="1000"
-            width="1000"
-            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
-          />
-        </ImageContainer>
+        <div>
+          <p>You Get to Watch</p>
+        </div>
       ),
     },
     {
       icon: <IconSearch className="h-8 w-8 text-secondary" />,
-      title: "Unlock Customer Insights",
+      title: "Uncovers Buyer DNA",
       description:
         "While engaging, it's digging deep into who your customer is, what they'll spend, and how ready they are to buy. With proprietary information on virtually every lead, there's zero guesswork.",
       content: (
-        <ImageContainer>
-          <BlurImage
-            src="/second-backup.png"
-            alt="dashboard"
-            height="1000"
-            width="1000"
-            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
-          />
-        </ImageContainer>
+        <div>
+          <p>You Get to Watch</p>
+        </div>
       ),
     },
     {
       icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
-      title: "Score and Route Leads",
+      title: "Instantly Ranks & Routes Your Gold",
       description:
         "Every lead gets scored and routed instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
       content: (
-        <ImageContainer>
-          <BlurImage
-            src="/fourth-backup.png"
-            alt="dashboard"
-            height="1000"
-            width="1000"
-            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
-          />
-        </ImageContainer>
+        <div>
+          <p>You Get to Watch</p>
+        </div>
       ),
     },
     {
       icon: <IconMail className="h-8 w-8 text-secondary" />,
-      title: "Automate Follow-Ups",
+      title: "Automates Your Follow-Up Machine",
       description:
         "While your competition is sleeping, it's sending follow-ups that are closing. Email and SMS that hit hard and fast.",
       content: (
-        <ImageContainer>
-          <BlurImage
-            src="/third.png"
-            alt="dashboard"
-            width="1200"
-            height="1000"
-            className="object-cover"
-          />
-        </ImageContainer>
+        <div>
+          <p>You Get to Watch</p>
+        </div>
       ),
     },
     {
       icon: <IconSunglassesFilled className="h-8 w-8 text-secondary" />,
-      title: "You Get to Watch ",
+      title: "Watch Your Revenue Climb",
       description:
         "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected payoff.",
       content: (
-        <ImageContainer>
-          <BlurImage
-            src="/third.png"
-            alt="dashboard"
-            width="1200"
-            height="1000"
-            className="object-cover"
-          />
-        </ImageContainer>
+        <div>
+          <p>You Get to Watch</p>
+        </div>
       ),
     },
   ];
