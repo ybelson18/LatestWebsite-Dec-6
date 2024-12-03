@@ -90,7 +90,8 @@ export default function RootLayout({
         >
           <Script 
             src="https://app.leadtrap.ai/platform/script?partner_id=dfaacbca-1c96-4399-9b36-7c63c2707f16"
-            strategy="beforeInteractive"
+            strategy="afterInteractive"
+            type="text/javascript"
           />
           <NavBar />
           {children}
