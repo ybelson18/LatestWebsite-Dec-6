@@ -8,6 +8,7 @@ import type { Viewport } from "next";
 import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { LeadBot } from "@/components/lead-bot";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "LeadTrap - AI That Sends You Premium Leads",
@@ -80,10 +81,6 @@ export default function RootLayout({
               self.__wrap_n!=1&&self.__wrap_b(":R577puja:",1);
             `
           }} />
-          <script 
-            type="text/javascript" 
-            src="https://app.leadtrap.ai/platform/script?partner_id=dfaacbca-1c96-4399-9b36-7c63c2707f16"
-          ></script>
         </head>
         <body
           className={cn(
@@ -91,6 +88,10 @@ export default function RootLayout({
             "bg-charcoal antialiased h-full w-full"
           )}
         >
+          <Script 
+            src="https://app.leadtrap.ai/platform/script?partner_id=dfaacbca-1c96-4399-9b36-7c63c2707f16"
+            strategy="beforeInteractive"
+          />
           <NavBar />
           {children}
           <Footer />
