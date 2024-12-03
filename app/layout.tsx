@@ -80,6 +80,10 @@ export default function RootLayout({
               self.__wrap_n!=1&&self.__wrap_b(":R577puja:",1);
             `
           }} />
+          <script 
+            type="text/javascript" 
+            src="https://app.leadtrap.ai/platform/script?partner_id=dfaacbca-1c96-4399-9b36-7c63c2707f16"
+          ></script>
         </head>
         <body
           className={cn(
