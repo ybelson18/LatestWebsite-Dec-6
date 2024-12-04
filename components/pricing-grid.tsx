@@ -50,7 +50,6 @@ export const PricingGrid = () => {
       yearlyTotal: 3990,
       features: [
         "Everything in Pro, +",
-        "Social media integrations",
         "Advanced lead scoring",
         "Custom AI conversation flows",
         "Priority support",
