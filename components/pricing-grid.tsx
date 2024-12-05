@@ -54,6 +54,7 @@ export const PricingGrid = () => {
         "Custom AI conversation flows",
         "Priority support",
         "Team collaboration tools",
+        "CRM integration",
         "30 Days Free",
       ],
       onClick: () => {
@@ -74,6 +75,7 @@ export const PricingGrid = () => {
         "Dedicated success manager",
         "Early access to beta features",
         "Custom reporting",
+        "Custom enrichments",
         "30 Days Free",
       ],
       featured: true,
