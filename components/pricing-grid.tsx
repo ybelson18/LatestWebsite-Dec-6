@@ -26,9 +26,9 @@ export const PricingGrid = () => {
     {
       title: "Pro",
       description: "100 leads MONTHLY",
-      monthlyPrice: 299,
-      yearlyPrice: 249,
-      yearlyTotal: 2990,
+      monthlyPrice: 249,
+      yearlyPrice: 199,
+      yearlyTotal: 2388,
       features: [
         "AI-powered conversations",
         "Multi-channel follow-ups (Email, SMS)",
@@ -64,9 +64,9 @@ export const PricingGrid = () => {
     {
       title: "Mega",
       description: "600 leads MONTHLY",
-      monthlyPrice: 499,
-      yearlyPrice: 415,
-      yearlyTotal: 4990,
+      monthlyPrice: 799,
+      yearlyPrice: 665,
+      yearlyTotal: 7990,
       features: [
         "Everything in Pro+, +",
         "Advanced analytics dashboard",
