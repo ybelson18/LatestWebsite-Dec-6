@@ -5,7 +5,6 @@ import { useState } from "react";
 import { IconBolt } from "@tabler/icons-react";
 
 const b2bEnrichments = [
-  "Phone Number",
   "LinkedIn Profile URL",
   "Company Name",
   "Company Domain",
@@ -15,8 +14,11 @@ const b2bEnrichments = [
   "Company Industry",
   "Company Size",
   "Company Revenue",
+  "Existing Customers",
   "Company Headquarters Location",
   "Role Type",
+  "Professional Bio",
+  "Person Skill Set",
   "Work Email Address",
   "Phone Number Validation",
   "Social Media Profiles",
@@ -29,29 +31,40 @@ const b2bEnrichments = [
   "Geolocation of Contact",
   "Recent News About the Contact's Company",
   "Company Founding Year",
+  "Company Decision Makers",
   "Competitors",
   "Company Subsidiaries or Parent Organization",
   "Lead Score",
+  "Lead Value",
   "Budget",
   "Timeline",
   "Challenges or Pain Points",
   "Desired Features/Services",
   "Purchase Intent",
-  "Lead Value",
   "Preferred Communication Channel",
   "Decision-Making Process",
   "Competitor Mentions",
   "Growth or Expansion Plans",
+  "Reviews",
   "Emotional Sentiment",
-  "And more..."
+  "And more...",
 ];
 
 const b2cEnrichments = [
-  "Geographic Location (IP-Based)",
-  "Area Income Level",
+  "Mobile Phone Number",
+  "Instagram",
+  "Twitter (X)",
+  "LinkedIn Profile",
+  "Work Experience",
+  "Gender",
+  "Age Range",
+  "Geographic Location",
+  "Neighborhood Information",
   "Current Weather",
+  "Email Verification",
   "Browsing Interests",
   "Lead Score",
+  "Lead Value",
   "Budget Prediction",
   "Purchase Intent",
   "Behavioral Patterns",
@@ -67,7 +80,6 @@ const b2cEnrichments = [
   "Budget",
   "Timeline Preferences",
   "Current Challenges",
-  "Lead Value",
   "Intent Strength",
   "Emotional Sentiment",
   "Demographics",
@@ -126,17 +138,17 @@ export const LeadDataToggle = () => {
             {isB2B ? "Premium B2B Lead Data" : "Proprietary B2C Insights"}
           </h2>
           <p className="text-neutral-400 text-center text-xl mb-16">
-            {isB2B ? "Our leads come with world-class data and insights so you can close" : "Our leads come with world-class data and insights so you can close"}
+            Real-time consumer behavior and intent data so you can close
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {Array.from({ length: 3 }).map((_, colIndex) => (
               <motion.div
                 key={colIndex}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: colIndex * 0.1 }}
-                className="flex flex-col space-y-2"
+                className="flex flex-col gap-4"
               >
                 {(isB2B ? b2bEnrichments : b2cEnrichments)
                   .slice(colIndex * 13, (colIndex + 1) * 13)
